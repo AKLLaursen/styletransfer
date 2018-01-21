@@ -20,7 +20,7 @@ class StyleTransfer(object):
 
     def __init__(self, shape = (288, 288, 3), style_path = '',
                  w = [0.025, 0.8, 0.15, 0.025], style_weight = 1,
-                 content_weight = 1, tv_weight = 1e-7,
+                 content_weight = 1, tv_weight = 1.5e-7,
                  vgg_layers = [(2, 1), (3, 1), (4, 2), (5, 2)]):
 
         self.shape = shape
